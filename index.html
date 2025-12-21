@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Favicon Icon  -->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ed6489957e.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Css  -->
+    <link href="output.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <title>IntellixSoft | Home</title>
+    <style>
+        #hero {
+            position: relative;
+            overflow: hidden;
+            height: 88.5vh;
+        }
+
+        .bg-real {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <style>
+        /* Fade up */
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeUp {
+            animation: fadeUp 1.2s ease-out forwards;
+        }
+
+        /* Underline glowing animation */
+        @keyframes underlineMove {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .animate-underline {
+            animation: underlineMove 2s linear infinite;
+        }
+
+        /* Slow breathing glow */
+        @keyframes pulseGlow {
+
+            0%,
+            100% {
+                opacity: 0.4;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.9;
+                transform: scale(1.15);
+            }
+        }
+
+        .animate-pulse {
+            animation: pulseGlow 6s ease-in-out infinite;
+        }
+
+        /* Even slower pulse */
+        .animate-pulse-slow {
+            animation: pulseGlow 10s ease-in-out infinite;
+        }
+
+        /* Delay utility */
+        .delay-150 {
+            animation-delay: .15s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ✅ Responsive Sticky Header (Corrected) -->
+    <header class="shadow-md sticky top-0 z-50 bg-black overflow-visible" id="header-bar">
+        <nav class="min-h-[75px] overflow-visible">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/Logo-main.png" class="h-10" alt="Bitzonic Logo" />
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:order-2">
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navbar links -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col justify-center items-center font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
+
+                        <!-- Home -->
+                        <li class="relative p-1">
+                            <a href="./index.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Home</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Services (Corrected Structure) -->
+                        <li class="relative p-1" id="services-menu-trigger">
+                            <a href="./services.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm hover:text-teal-400">Services</a>
+                            <!-- Added the missing underline div -->
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <li class="relative p-1 group" id="courses-menu-trigger">
+                            <!-- Added href="#" to the anchor tag -->
+                            <a href="./courses.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm group-hover:text-teal-400 transition-colors duration-300">
+                                Courses
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+
+
+                            <div
+                                class="active-underline hidden hover:block absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out group-hover:w-full">
+                            </div>
+                            <div id="courses-dropdown"
+                                class="absolute left-0 top-full mt-2 w-56 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                                <ul class="py-1 text-gray-700" role="menu">
+                                    <li><a href="./01-web-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Web App Development</a></li>
+                                    <li><a href="./02-app-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Mobile App Development</a></li>
+                                    <li><a href="./03-Python-&-Machine-Learning.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Python & Machine Learning</a></li>
+                                    <li><a href="./04-Graphic-Designer.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Graphic Designer</a></li>
+                                    <li><a href="./05-Digital-Marketing.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Digital Marketing</a></li>
+                                    <li><a href="./06-Business-Development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Business Developemnt</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Our Team -->
+                        <li class="relative p-1">
+                            <a href="./our-team.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Our
+                                Team</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- About -->
+                        <li class="relative p-1">
+                            <a href="./about.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">About</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="relative p-1">
+                            <a href="./contact.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Contact</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content" class="h-auto w-full">
+        <section class="relative w-full h-[100vh] md:h-screen overflow-hidden">
+
+            <!-- Swiper Slider -->
+            <div class="swiper smoothVideoSlider absolute inset-0 w-full h-full">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide relative w-full h-full overflow-hidden">
+                        <video class="absolute inset-0 w-full h-full object-cover" muted playsinline preload="auto"
+                            poster="poster1.jpg">
+                            <source src="./assets/video/1.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/60"></div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide relative w-full h-full overflow-hidden">
+                        <video class="absolute inset-0 w-full h-full object-cover" muted playsinline preload="auto"
+                            poster="poster2.jpg">
+                            <source src="./assets/video/2.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/60"></div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide relative w-full h-full overflow-hidden">
+                        <video class="absolute inset-0 w-full h-full object-cover" muted playsinline preload="auto"
+                            poster="poster3.jpg">
+                            <source src="./assets/video/3.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/60"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HERO CONTENT -->
+            <div class="absolute inset-0 z-10 flex flex-col justify-center items-center text-center px-4 sm:px-6">
+
+                <!-- Floating Glow Background -->
+                <div class="absolute w-48 sm:w-72 h-48 sm:h-72 bg-[#56A49E]/20 blur-3xl rounded-full animate-pulse">
+                </div>
+                <div class="absolute w-64 sm:w-96 h-64 sm:h-96 bg-[#4FD1C5]/10 blur-3xl rounded-full 
+                    -top-5 sm:-top-10 right-5 sm:right-10 animate-pulse-slow"></div>
+
+                <!-- Heading -->
+                <h1 class="relative text-3xl sm:text-4xl md:text-6xl font-extrabold mb-6 
+                   text-[#56A49E] leading-tight animate-fadeUp">
+                    Transforming Ideas Into <br />
+                    <span class="text-[#56A49E]">Digital Excellence</span>
+                </h1>
+
+                <!-- Animated Underline -->
+                <div class="relative w-32 sm:w-48 md:w-80 h-1 mb-6 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent 
+                        via-[#56A49E] to-transparent animate-underline"></div>
+                </div>
+
+                <!-- Sub text -->
+                <p class="text-gray-200 text-base sm:text-lg md:text-xl max-w-lg sm:max-w-2xl 
+                  leading-relaxed animate-fadeUp delay-150 px-2">
+                    We craft Fast, Secure & Scalable Web Apps, Mobile Applications
+                    and next-generation AI Solutions to accelerate your digital transformation.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="services" class="bg-black py-10">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-12 font-[Poppins]">
+                <!-- Section Heading -->
+                <h2 class="font-bold text-3xl md:text-5xl lg:text-[63px] text-white">
+                    Our <span class="text-[#56A49E]">Services</span>
+                </h2>
+                <p class="text-white font-light text-base md:text-lg pt-6">
+                    We deliver innovative digital solutions that empower brands to grow and succeed. From startups to
+                    global businesses, our team provides expert services built on creativity, strategy, and precision.
+                    Every project reflects our commitment to quality, collaboration, and lasting results that go beyond
+                    expectations.
+                </p>
+
+                <!-- Services Cards Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+                    <!-- Card 1 -->
+                    <div
+                        class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px] flex items-center">
+                        <!-- Animated Gradient Background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">Web App Development</h5>
+                            <p class="text-base font-light">
+                                Powerful development is more than coding — it’s about performance, security, and
+                                seamless flow. Our skilled developers turn ideas into fast, responsive, and scalable
+                                websites. Using modern frameworks and structured architecture, we create solutions that
+                                blend function with elegant design. Every line of code is optimized to improve speed,
+                                stability, and user experience.
+                            </p>
+
+                            <!-- Animated Button -->
+
+                            <div
+                                class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <a href="./contact.html" class="">
+                                    <span class="relative z-10 flex items-center">
+                                        Hire Us Now
+                                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500  min-h-[350px] flex items-center">
+                        <!-- Animated Gradient Background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">App Development</h5>
+                            <p class="text-base font-light">
+                                Smart development is more than features — it’s about performance, security, and smooth
+                                interaction. Our expert developers transform concepts into fast, responsive, and
+                                scalable mobile apps. Using modern frameworks and structured architecture, we build
+                                solutions that combine function with elegant design. Every element is refined to enhance
+                                speed, stability, and overall user experience.
+                            </p>
+
+                            <!-- Animated Button -->
+                            <div
+                                class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <a href="./contact.html">
+                                    <span class="relative z-10 flex items-center">
+                                        Hire Us Now
+                                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Card 4 -->
+                    <div
+                        class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500  min-h-[350px] flex items-center">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">
+                                Python & Machine Learning
+                            </h5>
+                            <p class="text-base font-light">
+                                Smart innovation is more than data — it’s about logic, precision, and intelligent
+                                outcomes. Our experts use Python to build efficient, scalable, and data-driven
+                                solutions. With advanced algorithms and clean code structure, we create models that
+                                learn, adapt, and improve over time. Every process is refined to ensure accuracy, speed,
+                                and real-world performance. The result is intelligent automation that drives growth .
+                            </p>
+                            <div
+                                class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <a href="./contact.html">
+                                    <span class="relative z-10 flex items-center">
+                                        Hire Us Now
+                                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div
+                        class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500  min-h-[350px] flex items-center">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">Graphic Designer</h5>
+                            <p class="text-base font-light">
+                                Creative design is more than visuals — it’s about emotion, clarity, and lasting impact.
+                                Our expert designers create visuals that are bold, elegant, and purpose-driven. Using
+                                modern tools and structured design systems, we craft graphics that balance creativity
+                                with powerful messaging. Every detail is refined to ensure consistency, engagement, and
+                                brand recognition — creating visuals that speak louder than words.
+                            </p>
+                            <div
+                                class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <a href="./contact.html">
+                                    <span class="relative z-10 flex items-center">
+                                        Hire Us Now
+                                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div
+                        class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500  min-h-[350px] flex items-center">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">Digital Marketing</h5>
+                            <p class="text-base font-light">
+                                Smart marketing is more than promotion — it’s about strategy, creativity, and measurable
+                                growth. Our skilled marketers design campaigns that are engaging, data-driven, and
+                                result-focused. Using modern tools and structured techniques, we connect brands with the
+                                right audience across every platform. Every campaign is refined to boost visibility,
+                                build trust, and drive meaningful conversions.
+                            </p>
+                            <div
+                                class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <a href="./contact.html">
+                                    <span class="relative z-10 flex items-center">
+                                        Hire Us Now
+                                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="relative group px-6 py-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500  min-h-[350px] flex items-center">
+                        <!-- Animated Gradient Background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">Business Developemnt</h5>
+                            <p class="text-base font-light">
+                                Strategic growth is more than numbers — it’s about vision, connection, and long-term
+                                value. Our expert team builds strategies that are innovative, goal-driven, and
+                                result-oriented. Using modern tools and structured planning, we craft approaches that
+                                balance creativity with practical execution. Every step is refined to strengthen
+                                relationships, expand opportunities, and drive sustainable success.
+                            </p>
+
+                            <!-- Animated Button -->
+                            <div
+                                class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <a href="./contact.html">
+                                    <span class="relative z-10 flex items-center">
+                                        Hire Us Now
+                                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="request" class="relative flex justify-center px-4 py-12">
+            <div
+                class="relative bg-[url('./assets/request-img.jpg')] bg-cover bg-center w-full max-w-[1340px] min-h-[400px] md:min-h-[500px] flex items-center justify-center rounded-lg overflow-hidden">
+                <!-- Overlay -->
+                <div
+                    class="bg-gradient-to-r from-[#145B55] to-[#56A49E]/60 w-full h-full flex flex-col items-center justify-center p-6 rounded-lg">
+                    <!-- Content -->
+                    <div class="w-full max-w-3xl flex flex-col items-center justify-center gap-6 text-center">
+                        <h1
+                            class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[Sora] font-semibold leading-snug">
+                            Request a Customized <br class="hidden sm:block" />
+                            Solution for Your Business!
+                        </h1>
+
+                        <p class="text-base sm:text-lg md:text-xl font-[Sora] font-normal text-[#EDF2F4]">
+                            Every business is unique. Request a tailored solution crafted
+                            specifically for your organization's challenges and goals.
+                        </p>
+
+                        <a href="./contact.html"
+                            class="inline-flex items-center justify-center px-6 py-3 text-sm sm:text-base font-semibold text-black bg-[#eed025] rounded-lg hover:bg-white hover:text-[#56A49E] focus:ring-4 focus:outline-none focus:ring-blue-300 transition w-fit">
+                            Contact Us
+                            <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4-4 4" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="client" class="bg-black px-4 border-b-3 border-t-3">
+            <div class="client-main px-6 py-12">
+                <!-- Heading -->
+                <div class="card-heading my-5 text-[#56A49E] text-center">
+                    <h2
+                        class="font-[Poppins] text-white font-bold text-3xl md:text-5xl leading-tight md:leading-[70px] pt-6">
+                        What Our <span class="text-[#56A49E]">Clients</span> Say
+                    </h2>
+
+                    <!-- Stars -->
+                    <div class="icons my-4 flex justify-center gap-2">
+                        <i class="fa-solid fa-star text-[#febf06] text-sm font-light md:text-lg"></i>
+                        <i class="fa-solid fa-star text-[#febf06] text-sm font-light md:text-lg"></i>
+                        <i class="fa-solid fa-star text-[#febf06] text-sm font-light md:text-lg"></i>
+                        <i class="fa-solid fa-star text-[#febf06] text-sm font-light md:text-lg"></i>
+                        <i class="fa-solid fa-star text-[#febf06] text-sm font-light md:text-lg"></i>
+                    </div>
+
+                    <p class="font-[Poppins] font-bold text-xl md:text-2xl">
+                        (5.0/5.0)
+                    </p>
+                </div>
+
+                <!-- Cards Wrapper -->
+                <div class="w-full flex justify-center">
+                    <div id="cards-container"
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 max-w-[1300px] w-full px-4 bg">
+                        <!-- Cards will be injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="flex gap-4 justify-center pt-12">
+                    <input type="radio" name="option" class="radio-btn w-4 h-4 accent-[#56A49E]" checked />
+                    <input type="radio" name="option" class="radio-btn w-4 h-4 accent-[#56A49E]" />
+                    <input type="radio" name="option" class="radio-btn w-4 h-4 accent-[#56A49E]" />
+                    <input type="radio" name="option" class="radio-btn w-4 h-4 accent-[#56A49E]" />
+                    <input type="radio" name="option" class="radio-btn w-4 h-4 accent-[#56A49E]" />
+                </div>
+            </div>
+        </section>
+
+        <section id="work-with" class="mt-18">
+            <div class="work-with-main px-[27.13px]">
+                <div class="work-with-heading text-center">
+                    <h2
+                        class="font-[Sora] text-[30px] leading-[55px] font-bold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">
+                        Collaborative Platforms
+                    </h2>
+
+                    <p class="font-[Sora] sm:text-[50px] text-[25px] font-bold leading-[55px]">
+                        Work with Us on Reliable
+                        <span
+                            class="font-bold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Networks</span>
+                    </p>
+                </div>
+
+                <div class="w-full flex flex-wrap items-center justify-center gap-5 p-6 mt-8">
+                    <!-- Fiverr Card with Gradient Hover Animation -->
+                    <div
+                        class="relative group flex flex-col justify-center items-center text-center p-6 rounded-2xl w-[400px] h-[430px] bg-black overflow-hidden shadow-[inset_0_0_100px_rgba(0,0,0,0.6)] text-white transition-all duration-500">
+                        <!-- Animated Gradient Overlay -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col justify-center items-center gap-5">
+                            <div
+                                class="w-24 h-24 flex items-center justify-center rounded-full bg-white text-black mb-4 shadow-md">
+                                <span class="text-3xl font-bold">
+                                    <img src="./assets/fiverr.png" width="50px" alt="Fiverr Logo" />
+                                </span>
+                            </div>
+
+                            <h3
+                                class="text-3xl font-semibold mb-2 text-white transition-colors duration-500 group-hover:text-white">
+                                Fiverr
+                            </h3>
+
+                            <p
+                                class="text-gray-300 mb-4 leading-relaxed text-xl transition-colors duration-500 group-hover:text-white/90">
+                                Find my Fiverr gigs for creative solutions delivered quickly and
+                                professionally.
+                            </p>
+
+                            <a href="./contact.html"
+                                class="relative inline-flex justify-center px-6 py-2 text-lg font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <span class="relative z-10 flex items-center">
+                                    Hire Us on Fiverr
+                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Upwork Card -->
+                    <!-- Upwork Card with Gradient Hover Animation -->
+                    <div
+                        class="relative group flex flex-col justify-center items-center text-center p-6 rounded-2xl w-[400px] h-[430px] bg-black overflow-hidden shadow-[inset_0_0_100px_rgba(0,0,0,0.6)] text-white transition-all duration-500">
+                        <!-- Animated Gradient Overlay -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col justify-center items-center gap-5">
+                            <div
+                                class="w-24 h-24 flex items-center justify-center rounded-full bg-white text-black mb-4 shadow-md">
+                                <!-- Upwork Icon -->
+                                <span class="text-[50px] font-bold">
+                                    <i class="fa-brands fa-upwork"></i>
+                                </span>
+                            </div>
+
+                            <h3
+                                class="text-3xl font-semibold mb-2 text-white transition-colors duration-500 group-hover:text-white">
+                                Upwork
+                            </h3>
+
+                            <p
+                                class="text-gray-300 mb-4 leading-relaxed text-xl transition-colors duration-500 group-hover:text-white/90">
+                                Hire us on Upwork for quality-driven freelance services tailored to your
+                                needs.
+                            </p>
+
+                            <a href="./contact.html"
+                                class="relative inline-flex justify-center px-6 py-2 text-lg font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <span class="relative z-10 flex items-center">
+                                    Hire Us on Upwork
+                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Card with Gradient Hover Animation -->
+                    <div
+                        class="relative group flex flex-col justify-center items-center text-center p-6 rounded-2xl w-[400px] h-[430px] bg-black overflow-hidden shadow-[inset_0_0_100px_rgba(0,0,0,0.6)] text-white transition-all duration-500">
+                        <!-- Animated Gradient Overlay -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col justify-center items-center gap-5">
+                            <div
+                                class="w-24 h-24 flex items-center justify-center rounded-full bg-white text-black mb-4 shadow-md">
+                                <!-- LinkedIn Icon -->
+                                <span class="text-[50px] font-bold">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </span>
+                            </div>
+
+                            <h3
+                                class="text-3xl font-semibold mb-2 text-white transition-colors duration-500 group-hover:text-white">
+                                LinkedIn
+                            </h3>
+
+                            <p
+                                class="text-gray-300 mb-4 leading-relaxed text-xl transition-colors duration-500 group-hover:text-white/90">
+                                Connect with me on LinkedIn to explore opportunities and view journey.
+                            </p>
+
+                            <a href="./contact.html"
+                                class="relative inline-flex justify-center px-6 py-2 text-lg font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                                <span class="relative z-10 flex items-center">
+                                    Hire Us on LinkedIn
+                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="frequently-questions" class="mt-18">
+            <div class="">
+                <div class="w-full bg-[rgba(0,0,0,0.07)] shadow-lg rounded-lg p-6 flex flex-col items-center py-20">
+                    <!-- Heading -->
+                    <h2 class="font-[Sora] sm:text-[50px] text-[25px] font-bold leading-[55px] pb-5">
+                        <span
+                            class="font-bold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Frequently</span>
+                        Asked Questions
+                    </h2>
+
+                    <!-- FAQ Container -->
+                    <div class="space-y-4 w-[94%] my-5">
+                        <!-- FAQ Item 1 -->
+                        <div class="rounded-lg overflow-hidden">
+                            <button
+                                class="faq-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                                <span class="font-normal text-[rgba(0, 0, 0, 1)] font-[Sora]">1. What courses do you
+                                    offer at your institute?</span>
+                                <div
+                                    class="bg-gradient-to-r from-[#145B55] to-[#56A49E] h-[30px] w-[35px] rounded-[5px] flex items-center justify-center">
+                                    <span
+                                        class="icon text-white text-center h-[30px] w-[35px] text-[19px] font-bold">+</span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 px-4">
+                                <p class="py-3 text-gray-600">
+                                    We offer professional training in Web Development, App Development, Python & Machine
+                                    Learning, Graphic Design, Business Development, and Digital Marketing — all designed
+                                    to help students gain real-world skills.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="rounded-lg overflow-hidden">
+                            <button
+                                class="faq-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                                <span class="font-normal text-[rgba(0, 0, 0, 1)] font-[Sora] text-gray-800">2. Do you
+                                    provide practical, hands-on learning?</span>
+                                <div
+                                    class="bg-gradient-to-r from-[#145B55] to-[#56A49E] h-[30px] w-[35px] rounded-[5px] flex items-center justify-center">
+                                    <span
+                                        class="icon text-white text-center h-[30px] w-[35px] text-[19px] font-bold">+</span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 px-4">
+                                <p class="py-3 text-gray-600">
+                                    Yes, every course includes live projects and practical sessions. Students work on
+                                    real client-based projects to build a strong portfolio and professional confidence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="rounded-lg overflow-hidden">
+                            <button
+                                class="faq-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                                <span class="font-normal text-[rgba(0, 0, 0, 1)] font-[Sora] text-gray-800">3. Can I
+                                    work on client projects while learning?</span>
+                                <div
+                                    class="bg-gradient-to-r from-[#145B55] to-[#56A49E] h-[30px] w-[35px] rounded-[5px] flex items-center justify-center">
+                                    <span
+                                        class="icon text-white text-center h-[30px] w-[35px] text-[19px] font-bold">+</span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 px-4">
+                                <p class="py-3 text-gray-600">
+                                    Absolutely! We give our students opportunities to collaborate on real client work
+                                    under expert guidance, helping them gain valuable industry experience..
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="rounded-lg overflow-hidden">
+                            <button
+                                class="faq-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                                <span class="font-normal text-[rgba(0, 0, 0, 1)] font-[Sora] text-gray-800">4. Do you
+                                    offer online or in-person classes?</span>
+                                <div
+                                    class="bg-gradient-to-r from-[#145B55] to-[#56A49E] h-[30px] w-[35px] rounded-[5px] flex items-center justify-center">
+                                    <span
+                                        class="icon text-white text-center h-[30px] w-[35px] text-[19px] font-bold">+</span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 px-4">
+                                <p class="py-3 text-gray-600">
+                                    We offer both online and in-person classes with flexible schedules, allowing
+                                    students to learn at their own pace while staying connected with mentors.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="rounded-lg overflow-hidden">
+                            <button
+                                class="faq-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                                <span class="font-normal text-[rgba(0, 0, 0, 1)] font-[Sora] text-gray-800">5. Do you
+                                    provide job or internship support after course completion?</span>
+                                <div
+                                    class="bg-gradient-to-r from-[#145B55] to-[#56A49E] h-[30px] w-[35px] rounded-[5px] flex items-center justify-center">
+                                    <span
+                                        class="icon text-white text-center h-[30px] w-[35px] text-[19px] font-bold">+</span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 px-4">
+                                <p class="py-3 text-gray-600">
+                                    Yes, we assist our students with internships, freelancing guidance, and job
+                                    placement opportunities through our network of industry partners.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 6 -->
+                        <div class="rounded-lg overflow-hidden">
+                            <button
+                                class="faq-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                                <span class="font-normal text-[rgba(0, 0, 0, 1)] font-[Sora] text-gray-800">6. Do you
+                                    also provide services to businesses?</span>
+                                <div
+                                    class="bg-gradient-to-r from-[#145B55] to-[#56A49E] h-[30px] w-[35px] rounded-[5px] flex items-center justify-center">
+                                    <span
+                                        class="icon text-white text-center h-[30px] w-[35px] text-[19px] font-bold">+</span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 px-4">
+                                <p class="py-3 text-gray-600">
+                                    Yes, besides teaching, our professional team works directly with clients on projects
+                                    like website creation, app development, branding, and digital marketing campaigns.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gradient-to-r from-[#114a45] to-[#56A49E] text-white py-10 px-4 sm:px-6">
+        <!-- Overlay -->
+
+        <!-- Footer Content -->
+        <div class="relative z-10 container mx-auto flex justify-between items-start flex-wrap">
+            <!-- Company Info -->
+            <div class="mb-8 w-[320px]">
+                <div class="px-4 sm:px-6 lg:px-8">
+                    <img src="./assets/Logo-main.png" alt="IntellixSoft" class="w-60 h-20 6 mr-2 mb-3" />
+                    <p
+                        class="text-[13px] sm:text-[14px] md:text-sm lg:text-base font-normal leading-relaxed mb-4 font-sora">
+                        At IntellixSoft, we turn ideas into powerful digital realities,
+                    </p>
+                </div>
+
+                <div class="flex space-x-3 px-4 sm:px-6 lg:px-8">
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Mobile App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Web App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">UI/UX
+                            Design</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">SaaS Product
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom Chatbot
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom ChatGPT
+                            App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Search Engine
+                            Optimization</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Digital
+                            Marketing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-8 w-[200px]">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">About Us</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Services</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                <ul class="space-y-3 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt text-[#eed025]"></i>
+                        <span
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300 cursor-pointer">Bahawalpur,
+                            Pakistan</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-[#eed025]"></i>
+                        <a href="mailto:officialIntellixSoft@gmail.com"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">officialIntellixSoft@gmail.com</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-[#eed025]"></i>
+                        <a href="tel:+92314616319"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">+92 314 616
+                            1319</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".smoothVideoSlider", {
+            loop: true,
+            effect: "fade",
+            speed: 1500,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            on: {
+                slideChangeTransitionEnd: function () {
+                    // Pause ALL videos
+                    const videos = document.querySelectorAll(".swiper-slide video");
+                    videos.forEach((video) => {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+
+                    // Play ACTIVE slide video
+                    const activeSlide = this.slides[this.activeIndex];
+                    const activeVideo = activeSlide.querySelector("video");
+
+                    if (activeVideo) {
+                        activeVideo.play().catch(() => { });
+                    }
+                },
+            },
+        });
+
+        // Play first slide video on load
+        window.addEventListener("load", () => {
+            const firstVideo = document.querySelector(".swiper-slide-active video");
+            if (firstVideo) firstVideo.play();
+        });
+    </script>
+
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/faq.js"></script>
+    <script src="./js/home-cards.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1cb7da3db8.js" crossorigin="anonymous"></script>
+    <!-- Custom Css  -->
+    <link href="output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+
+    <title>IntellixSoft | About</title>
+
+    <style>
+        .koulen-regular {
+            font-family: "Koulen", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ✅ Responsive Sticky Header (Corrected) -->
+    <header class="shadow-md sticky top-0 z-50 bg-black overflow-visible" id="header-bar">
+        <nav class="min-h-[75px] overflow-visible">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/Logo-main.png" class="h-10" alt="Bitzonic Logo" />
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:order-2">
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navbar links -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col justify-center items-center font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
+
+                        <!-- Home -->
+                        <li class="relative p-1">
+                            <a href="./index.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Home</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Services (Corrected Structure) -->
+                        <li class="relative p-1" id="services-menu-trigger">
+                            <a href="./services.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm hover:text-teal-400">Services</a>
+                            <!-- Added the missing underline div -->
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <li class="relative p-1 group" id="courses-menu-trigger">
+                            <!-- Added href="#" to the anchor tag -->
+                            <a href="./courses.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm group-hover:text-teal-400 transition-colors duration-300">
+                                Courses
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+
+
+                            <div
+                                class="active-underline hidden hover:block absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out group-hover:w-full">
+                            </div>
+                            <div id="courses-dropdown"
+                                class="absolute left-0 top-full mt-2 w-56 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                                <ul class="py-1 text-gray-700" role="menu">
+                                    <li><a href="./01-web-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Web App Development</a></li>
+                                    <li><a href="./02-app-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Mobile App Development</a></li>
+                                    <li><a href="./03-Python-&-Machine-Learning.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Python & Machine Learning</a></li>
+                                    <li><a href="./04-Graphic-Designer.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Graphic Designer</a></li>
+                                    <li><a href="./05-Digital-Marketing.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Digital Marketing</a></li>
+                                    <li><a href="./06-Business-Development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Business Developemnt</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Our Team -->
+                        <li class="relative p-1">
+                            <a href="./our-team.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Our
+                                Team</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- About -->
+                        <li class="relative p-1">
+                            <a href="./about.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">About</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="relative p-1">
+                            <a href="./contact.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Contact</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full flex flex-col lg:flex-row">
+        <!-- Left Side -->
+        <div
+            class="w-full lg:w-1/2 bg-gradient-to-r from-[#145B55] to-[#56A49E] text-white flex flex-col items-center justify-center p-6 sm:p-10">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8">
+                Over 500+ Satisfied Clients <br />
+                From 50+ Countries!
+            </h2>
+
+            <!-- World map with client images -->
+            <div
+                class="relative w-full max-w-sm sm:max-w-md aspect-square map-container rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
+
+                <!-- Map Background -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1024px-World_map_-_low_resolution.svg.png"
+                    alt="World Map" class="w-full h-full object-contain opacity-20">
+
+                <!-- Avatar 1 -->
+                <div class="absolute top-[20%] left-[25%] avatar-container float">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg"
+                        class="avatar w-10 sm:w-12 h-10 sm:h-12 rounded-full border-2 border-white shadow-lg float">
+                    <div class="tooltip"></div>
+                </div>
+
+                <!-- Avatar 2 -->
+                <div class="absolute top-[30%] left-[70%] avatar-container float">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg"
+                        class="avatar w-10 sm:w-12 h-10 sm:h-12 rounded-full border-2 border-white shadow-lg float">
+                    <div class="tooltip"></div>
+                </div>
+
+                <!-- Avatar 3 -->
+                <div class="absolute top-[60%] left-[40%] avatar-container float">
+                    <img src="https://randomuser.me/api/portraits/women/3.jpg"
+                        class="avatar w-10 sm:w-12 h-10 sm:h-12 rounded-full border-2 border-white shadow-lg float">
+                    <div class="tooltip"></div>
+                </div>
+
+                <!-- Avatar 4 -->
+                <div class="absolute bottom-[15%] right-[20%] avatar-container float">
+                    <img src="https://randomuser.me/api/portraits/men/4.jpg"
+                        class="avatar w-10 sm:w-12 h-10 sm:h-12 rounded-full border-2 border-white shadow-lg float">
+                    <div class="tooltip"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="w-full lg:w-1/2 bg-white flex flex-col justify-center p-6 sm:p-10">
+            <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
+                Have A Project In Mind? Let's Talk!
+            </h2>
+
+            <form action="https://formspree.io/f/mldpydkz" method="POST" class="space-y-4 sm:space-y-5">
+                
+                <!-- Full name and Email -->
+                <div class="flex flex-col md:flex-row gap-3 sm:gap-4">
+                    <input type="text" name="name" placeholder="Full Name *"
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#56A49E]" />
+                    <input type="email" name="email" placeholder="Business Email *"
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#56A49E]" />
+                </div>
+
+                <!-- Phone Number -->
+                <input type="tel" name="phone" placeholder="Phone Number *"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#56A49E]" />
+
+                <!-- Subject -->
+                <input type="text" name="subject" placeholder="Subject *"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#56A49E]" />
+
+                <!-- Message -->
+                <textarea name="message" placeholder="Message *" rows="4"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#56A49E]"></textarea>
+
+                <!-- Submit Button -->
+                <a href="./contact.html" class="">
+                    <button type="submit"
+                        class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] border border-[#eed025] font-[Sora] font-semibold text-sm sm:text-base transition ease-in-out duration-300  hover:text-white hover:border hover:border-white hover:bg-[#56A49E]">
+                        Submit
+                    </button>
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black py-6 px-4 sm:px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Social Icons -->
+            <div class="flex space-x-3 sm:space-x-4 mb-4 md:mb-0">
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 text-[#ffffff] hover:bg-[#eed025] hover:text-black transition ease-in-out duration-300">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 text-[#ffffff] hover:bg-[#eed025] hover:text-black transition ease-in-out duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 text-[#ffffff] hover:bg-[#eed025] hover:text-black transition ease-in-out duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 text-[#ffffff] hover:bg-[#eed025] hover:text-black transition ease-in-out duration-300">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-gray-300 text-sm text-center md:text-right">
+                ©2025 <a href="index.html" class="font-semibold text-[#145B55]">INTELLIX <span
+                        class="text-[#eed025]">Soft</span></a>. All Rights
+                Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="./js/header.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+</body>
+
+</html>

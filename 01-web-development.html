@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intellix Soft | Web Development Course - Intellix Soft</title>
+    <!-- Favicon Icon  -->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ed6489957e.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Css  -->
+    <link href="output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-50">
+    <!-- ✅ Responsive Sticky Header (Corrected) -->
+    <header class="shadow-md sticky top-0 z-50 bg-black overflow-visible" id="header-bar">
+        <nav class="min-h-[75px] overflow-visible">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/Logo-main.png" class="h-10" alt="Bitzonic Logo" />
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:order-2">
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navbar links -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col justify-center items-center font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
+
+                        <!-- Home -->
+                        <li class="relative p-1">
+                            <a href="./index.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Home</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Services (Corrected Structure) -->
+                        <li class="relative p-1" id="services-menu-trigger">
+                            <a href="./services.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm hover:text-teal-400">Services</a>
+                            <!-- Added the missing underline div -->
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <li class="relative p-1 group" id="courses-menu-trigger">
+                            <!-- Added href="#" to the anchor tag -->
+                            <a href="./courses.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm group-hover:text-teal-400 transition-colors duration-300">
+                                Courses
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+
+
+                            <div
+                                class="active-underline hidden hover:block absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out group-hover:w-full">
+                            </div>
+                            <div id="courses-dropdown"
+                                class="absolute left-0 top-full mt-2 w-56 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                                <ul class="py-1 text-gray-700" role="menu">
+                                    <li><a href="./01-web-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Web App Development</a></li>
+                                    <li><a href="./02-app-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Mobile App Development</a></li>
+                                    <li><a href="./03-Python-&-Machine-Learning.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Python & Machine Learning</a></li>
+                                    <li><a href="./04-Graphic-Designer.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Graphic Designer</a></li>
+                                    <li><a href="./05-Digital-Marketing.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Digital Marketing</a></li>
+                                    <li><a href="./06-Business-Development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Business Developemnt</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Our Team -->
+                        <li class="relative p-1">
+                            <a href="./our-team.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Our
+                                Team</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- About -->
+                        <li class="relative p-1">
+                            <a href="./about.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">About</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="relative p-1">
+                            <a href="./contact.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Contact</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- STICKY ENROLL BUTTON -->
+    <a href="./contact.html"
+        class="fixed bottom-4 right-4 bg-blue-700 text-white px-5 py-3 rounded-xl shadow-lg hover:bg-blue-800 transition z-50">
+        Enroll Now
+    </a>
+
+    <main class="">
+
+        <!-- HERO SECTION -->
+        <section class="bg-white  py-20 text-center">
+            <div class="max-w-5xl mx-auto px-5">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Become a Professional Web Developer</h1>
+                <p class="text-lg md:text-xl mb-6">
+                    Learn. Build. Launch your web development career with confidence.
+                </p>
+                <div class="flex justify-center gap-4">
+                    <!-- Buttons -->
+                    <div class="hero-btn mt-6 flex flex-wrap gap-4">
+                        <a href="./contact.html" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] border border-[#eed025] font-[Sora] font-semibold text-sm sm:text-base hover:text-white hover:border hover:border-white hover:bg-[#56A49E] transition ease-in-out duration-300">
+                                Enroll Now
+                            </button>
+                        </a>
+
+                        <a href="#outline" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-[#FFFFFF] font-[Sora] font-semibold text-sm sm:text-base hover:bg-[#56A49E] hover:text-[#ffffff] bg-black transition ease-in-out duration-300">
+                                View Outline
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSE OVERVIEW -->
+        <section class="py-16 bg-gradient-to-r from-[#114a45] to-[#56A49E] text-white">
+            <div class="max-w-6xl mx-auto px-6 ">
+                <h2 class="text-3xl font-bold mb-6 text-center">Course Overview</h2>
+                <p class="text-white leading-relaxed text-center max-w-3xl mx-auto">
+                    The Web Development course at <strong>Intellix Soft</strong> transforms beginners into professional
+                    developers. You’ll learn front-end and back-end technologies including HTML, CSS, JavaScript, React,
+                    and Node.js through practical, project-based lessons.
+                </p>
+            </div>
+        </section>
+
+        <!-- WHAT YOU'LL LEARN -->
+        <section id="services" class="bg-white py-10">
+            <div class="px-6 md:px-12 font-[Poppins]">
+                <!-- Section Heading -->
+                <h2 class="font-bold text-3xl md:text-5xl lg:text-[63px] text-black">
+                    Our <span class="text-[#56A49E]">Services</span>
+                </h2>
+                <p class="text-black font-light text-base md:text-lg pt-6">
+                    We deliver innovative digital solutions that empower brands to grow and succeed. From startups to
+                    global businesses, our team provides expert services built on creativity, strategy, and precision.
+                    Every project reflects our commitment to quality, collaboration, and lasting results that go beyond
+                    expectations.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
+                    <!-- Card 1: Frontend Development -->
+                    <div
+                        class="relative group py-8 px-4 bg-black rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-white group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">Frontend Development</h5>
+                            <p class="text-base font-light">
+                                Transform static designs into interactive websites. Learn HTML5, CSS3, and JavaScript to
+                                build
+                                responsive layouts and user interfaces. Master modern frameworks like React.js to create
+                                dynamic
+                                web applications with smooth user experiences.
+                            </p>
+                            <ul class="list-disc pl-5 text-sm font-light">
+                                <li>Responsive web design using HTML5 & CSS3</li>
+                                <li>Interactive websites with JavaScript</li>
+                                <li>Modern web apps using React.js</li>
+                                <li>Styling and layout with Tailwind CSS</li>
+                                <li>Optimizing UI for performance and speed</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Full-Stack Development -->
+                    <div
+                        class="relative group py-8 px-4 bg-black rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-white group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">Backend Development</h5>
+                            <p class="text-base font-light">
+                                Power the web behind the scenes. Learn to handle server-side logic, manage databases,
+                                and build
+                                secure APIs. Gain skills to create scalable, high-performance backend systems that
+                                support
+                                modern web applications.
+                            </p>
+                            <ul class="list-disc pl-5 text-sm font-light">
+                                <li>Server-side programming with Node.js & Express.js</li>
+                                <li>Database management: MongoDB, SQL/NoSQL</li>
+                                <li>REST API design and integration</li>
+                                <li>Authentication and secure data handling</li>
+                                <li>Building scalable backend applications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3: Backend Development -->
+                    <div
+                        class="relative group py-8 px-4 bg-black rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-white group-hover:text-white transition-colors duration-500">
+                            <h5 class="text-2xl font-bold">Full-Stack Development</h5>
+                            <p class="text-base font-light">
+                                Become a complete developer by combining frontend and backend skills. Build dynamic web
+                                apps
+                                from scratch, integrate databases, implement authentication, and deploy full-stack
+                                solutions
+                                that work seamlessly for users.
+                            </p>
+                            <ul class="list-disc pl-5 text-sm font-light">
+                                <li>Frontend: HTML5, CSS3, JavaScript, React.js</li>
+                                <li>Backend: Node.js, Express.js</li>
+                                <li>Database integration with MongoDB</li>
+                                <li>Authentication and secure APIs</li>
+                                <li>Deploying full-stack applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- COURSE OUTLINE -->
+        <section id="outline" class="py-20 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10">Course Outline</h2>
+
+                <div class="space-y-8">
+                    <!-- Module 1: Introduction -->
+                    <div class="bg-white p-6 rounded-2xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Module 1: Introduction to Web Development</h3>
+                        <ul class="list-disc pl-6 text-gray-700 mb-2">
+                            <li>Understanding the web ecosystem (Frontend, Backend, Full-Stack)</li>
+                            <li>Front-end vs Back-end development roles</li>
+                            <li>Essential tools and setup (VS Code, Node.js, Git)</li>
+                        </ul>
+                        <p class="text-gray-500"><strong>Technologies:</strong> VS Code, Node.js, Git, Browsers</p>
+                    </div>
+
+                    <!-- Module 2: HTML & CSS Fundamentals (Frontend) -->
+                    <div class="bg-white p-6 rounded-2xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Module 2: HTML5 & CSS3 Fundamentals</h3>
+                        <ul class="list-disc pl-6 text-gray-700 mb-2">
+                            <li>Semantic HTML structure (headings, forms, lists)</li>
+                            <li>CSS styling, layouts, Flexbox & Grid</li>
+                            <li>Responsive design for mobile, tablet, and desktop</li>
+                            <li>Mini project: Personal portfolio website</li>
+                        </ul>
+                        <p class="text-gray-500"><strong>Technologies:</strong> HTML5, CSS3, TailwindCSS, Bootstrap</p>
+                    </div>
+
+                    <!-- Module 3: JavaScript (Frontend + Backend Basics) -->
+                    <div class="bg-white p-6 rounded-2xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Module 3: JavaScript (Beginner to Advanced)</h3>
+                        <ul class="list-disc pl-6 text-gray-700 mb-2">
+                            <li>Core JavaScript concepts (variables, loops, functions)</li>
+                            <li>DOM manipulation and events (Frontend)</li>
+                            <li>APIs and async programming (Frontend + Backend basics)</li>
+                            <li>Mini project: Interactive web app (To-Do App, Calculator)</li>
+                        </ul>
+                        <p class="text-gray-500"><strong>Technologies:</strong> JavaScript (ES6+), Fetch API, JSON,
+                            Node.js basics</p>
+                    </div>
+
+                    <!-- Module 4: React.js (Frontend) -->
+                    <div class="bg-white p-6 rounded-2xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Module 4: Frontend Framework (React.js)</h3>
+                        <ul class="list-disc pl-6 text-gray-700 mb-2">
+                            <li>Component-based architecture (React Components, Props, State)</li>
+                            <li>Hooks, routing, and UI optimization</li>
+                            <li>Mini project: Single-page React application</li>
+                        </ul>
+                        <p class="text-gray-500"><strong>Technologies:</strong> React.js, JSX, React Router, TailwindCSS
+                        </p>
+                    </div>
+
+                    <!-- Module 5: Node.js & Express (Backend) -->
+                    <div class="bg-white p-6 rounded-2xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Module 5: Backend Development (Node.js & Express)</h3>
+                        <ul class="list-disc pl-6 text-gray-700 mb-2">
+                            <li>Server-side logic and Express.js setup</li>
+                            <li>Database integration with MongoDB</li>
+                            <li>APIs, authentication, and CRUD operations</li>
+                        </ul>
+                        <p class="text-gray-500"><strong>Technologies:</strong> Node.js, Express.js, MongoDB, REST APIs,
+                            JWT</p>
+                    </div>
+
+                    <!-- Module 6: Version Control & Deployment (Full-Stack) -->
+                    <div class="bg-white p-6 rounded-2xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Module 6: Version Control & Deployment</h3>
+                        <ul class="list-disc pl-6 text-gray-700 mb-2">
+                            <li>Git and GitHub for version control and collaboration</li>
+                            <li>Deploying frontend apps (Netlify, Vercel)</li>
+                            <li>Deploying full-stack apps (Render, Heroku)</li>
+                        </ul>
+                        <p class="text-gray-500"><strong>Technologies:</strong> Git, GitHub, Netlify, Vercel, Render,
+                            Heroku</p>
+                    </div>
+
+                    <!-- Module 7: Final Project & Certification (Full-Stack) -->
+                    <div class="bg-white p-6 rounded-2xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Module 7: Final Project & Certification</h3>
+                        <ul class="list-disc pl-6 text-gray-700 mb-2">
+                            <li>Build a complete full-stack project (Frontend + Backend)</li>
+                            <li>Project presentation and review</li>
+                            <li>Certificate of completion</li>
+                        </ul>
+                        <p class="text-gray-500"><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB,
+                            TailwindCSS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSE DETAILS -->
+        <section class="py-16 bg-black">
+            <div class="px-6 flex items-center justify-start md:flex-nowrap flex-wrap sm:gap-20 gap-10">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Course Details</h2>
+                    <ul class="space-y-2 text-white">
+                        <li><strong>Duration:</strong> 3 – 6 months</li>
+                        <li><strong>Mode:</strong> Online / On-Campus</li>
+                        <li><strong>Level:</strong> Beginner to Advanced</li>
+                        <li><strong>Projects:</strong> 5+ Live Projects</li>
+                        <li><strong>Certificate:</strong> Provided upon completion</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Career Opportunities</h2>
+                    <ul class="space-y-2 text-white">
+                        <li>Front-End Developer</li>
+                        <li>Full-Stack Developer</li>
+                        <li>UI Developer</li>
+                        <li>Freelance Web Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE INTELLIXSOFT -->
+        <section class="bg-gray-100 py-16">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-6">Why Choose Intellix Soft</h2>
+                <p class="text-gray-700 max-w-3xl mx-auto mb-10">
+                    Learn from industry experts, work on real projects, and receive career guidance every step of the
+                    way.
+                    Our approach ensures you gain practical experience, build confidence, and develop the skills needed
+                    to thrive in the tech industry.
+                </p>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                        <!-- Animated Gradient Background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h3 class="text-2xl font-bold">🧠 Expert Instructors</h3>
+                            <p class="text-base font-light">
+                                Learn directly from seasoned professionals with years of real-world experience. Our
+                                instructors
+                                provide hands-on guidance, insider tips, and mentorship to ensure you understand both
+                                theory
+                                and practical application. They teach modern practices, industry standards, and
+                                problem-solving
+                                techniques that prepare you for the professional world.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                        <!-- Animated Gradient Background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h3 class="text-2xl font-bold">💼 Practical Projects</h3>
+                            <p class="text-base font-light">
+                                Gain hands-on experience by working on real-world projects that simulate industry
+                                requirements.
+                                From frontend interfaces to backend systems, you’ll complete multiple live projects that
+                                strengthen
+                                your portfolio. This approach ensures you learn by doing, improving your coding skills
+                                and
+                                confidence for future jobs or freelance opportunities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                        <!-- Animated Gradient Background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                            <h3 class="text-2xl font-bold">🚀 Career Support</h3>
+                            <p class="text-base font-light">
+                                We guide you through freelancing opportunities, job placements, and interview
+                                preparation.
+                                Receive CV reviews, portfolio feedback, and mock interview sessions. Our career support
+                                ensures
+                                you not only learn to code but also know how to present your skills effectively to
+                                employers
+                                or clients, giving you a competitive edge in the tech industry.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="py-16 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="faq-item bg-white p-6 rounded-xl shadow">
+                        <h3 class="faq-question font-semibold cursor-pointer">Do I need prior experience?</h3>
+                        <p class="faq-answer text-gray-700 mt-2 hidden">No prior experience needed. This course starts
+                            from basics to advanced step-by-step.</p>
+                    </div>
+                    <div class="faq-item bg-white p-6 rounded-xl shadow">
+                        <h3 class="faq-question font-semibold cursor-pointer">What is the course duration?</h3>
+                        <p class="faq-answer text-gray-700 mt-2 hidden">The course lasts 3–6 months depending on your
+                            pace.</p>
+                    </div>
+                    <div class="faq-item bg-white p-6 rounded-xl shadow">
+                        <h3 class="faq-question font-semibold cursor-pointer">Is there a certificate?</h3>
+                        <p class="faq-answer text-gray-700 mt-2 hidden">Yes, a certificate is provided upon successful
+                            completion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gradient-to-r from-[#114a45] to-[#56A49E] text-white py-10 px-4 sm:px-6">
+        <!-- Overlay -->
+
+        <!-- Footer Content -->
+        <div class="relative z-10 container mx-auto flex justify-between items-start flex-wrap">
+            <!-- Company Info -->
+            <div class="mb-8 w-[320px]">
+                <div class="px-4 sm:px-6 lg:px-8">
+                    <img src="./assets/Logo-main.png" alt="IntellixSoft" class="w-60 h-20 6 mr-2 mb-3" />
+                    <p
+                        class="text-[13px] sm:text-[14px] md:text-sm lg:text-base font-normal leading-relaxed mb-4 font-sora">
+                        At IntellixSoft, we turn ideas into powerful digital realities,
+                    </p>
+                </div>
+
+                <div class="flex space-x-3 px-4 sm:px-6 lg:px-8">
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Mobile App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Web App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">UI/UX
+                            Design</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">SaaS
+                            Product
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom
+                            Chatbot
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom
+                            ChatGPT
+                            App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Search
+                            Engine
+                            Optimization</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Digital
+                            Marketing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-8 w-[200px]">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Services</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                <ul class="space-y-3 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt text-[#eed025]"></i>
+                        <span
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300 cursor-pointer">Bahawalpur,
+                            Pakistan</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-[#eed025]"></i>
+                        <a href="mailto:officialIntellixSoft@gmail.com"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">officialIntellixSoft@gmail.com</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-[#eed025]"></i>
+                        <a href="tel:+92314616319"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">+92 314 616
+                            1319</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/courses-data.js"></script>
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1cb7da3db8.js" crossorigin="anonymous"></script>
+    <!-- Custom Css  -->
+    <link href="output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+
+    <title>IntellixSoft | About</title>
+
+    <style>
+        .koulen-regular {
+            font-family: "Koulen", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ✅ Responsive Sticky Header (Corrected) -->
+    <header class="shadow-md sticky top-0 z-50 bg-black overflow-visible" id="header-bar">
+        <nav class="min-h-[75px] overflow-visible">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/Logo-main.png" class="h-10" alt="Bitzonic Logo" />
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:order-2">
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navbar links -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col justify-center items-center font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
+
+                        <!-- Home -->
+                        <li class="relative p-1">
+                            <a href="./index.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Home</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Services (Corrected Structure) -->
+                        <li class="relative p-1" id="services-menu-trigger">
+                            <a href="./services.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm hover:text-teal-400">Services</a>
+                            <!-- Added the missing underline div -->
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <li class="relative p-1 group" id="courses-menu-trigger">
+                            <!-- Added href="#" to the anchor tag -->
+                            <a href="./courses.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm group-hover:text-teal-400 transition-colors duration-300">
+                                Courses
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+
+
+                            <div
+                                class="active-underline hidden hover:block absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out group-hover:w-full">
+                            </div>
+                            <div id="courses-dropdown"
+                                class="absolute left-0 top-full mt-2 w-56 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                                <ul class="py-1 text-gray-700" role="menu">
+                                    <li><a href="./01-web-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Web App Development</a></li>
+                                    <li><a href="./02-app-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Mobile App Development</a></li>
+                                    <li><a href="./03-Python-&-Machine-Learning.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Python & Machine Learning</a></li>
+                                    <li><a href="./04-Graphic-Designer.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Graphic Designer</a></li>
+                                    <li><a href="./05-Digital-Marketing.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Digital Marketing</a></li>
+                                    <li><a href="./06-Business-Development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Business Developemnt</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Our Team -->
+                        <li class="relative p-1">
+                            <a href="./our-team.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Our
+                                Team</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- About -->
+                        <li class="relative p-1">
+                            <a href="./about.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">About</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="relative p-1">
+                            <a href="./contact.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Contact</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="About-content-main">
+        <section id="hero" class="bg-gradient-to-r from-[#114a45] to-[#56A49E] px-6 sm:px-10 md:px-16 lg:px-20">
+            <div
+                class="hero-main flex items-center justify-center sm:justify-start min-h-[220px] sm:min-h-[280px] md:min-h-[320px] lg:min-h-[360px]">
+                <h1
+                    class="font-[Inter] font-semibold text-3xl sm:text-4xl md:text-5xl text-white text-center sm:text-left">
+                    About Us
+                </h1>
+            </div>
+        </section>
+
+        <section id="technology" class="py-16 bg-white">
+            <div class="container mx-auto flex flex-col xl:flex-row items-center gap-12 px-6 lg:px-12">
+                <!-- Left Images -->
+                <div class="relative flex xl:max-w-1/2 max-w-[600px] h-[450px] border-4 border-amber-300">
+                    <img src="./assets/request-img.jpg" class="object-cover" alt="">
+                </div>
+
+                <!-- Right Content -->
+                <div class="xl:w-1/2 text-center lg:text-left">
+                    <p
+                        class="text-lg sm:text-xl font-[Sora] font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent mb-3">
+                        About Us
+                    </p>
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-[Sora] font-semibold leading-tight mb-6">
+                        Driving Innovation in Digital Technology!
+                    </h2>
+                    <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+                        At Intellixsoft, we believe technology is more than code — it’s
+                        the bridge to innovation, growth, and transformation. Our mission
+                        is to empower businesses with smart digital solutions that
+                        redefine possibilities. From web and app development to AI
+                        integration and digital marketing, we craft experiences that are
+                        intelligent, efficient, and built for the future. With a
+                        passionate team of developers, designers, and strategists,
+                        Intellixsoft continues to drive innovation in the digital world —
+                        shaping ideas into impactful realities.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="py-20 px-6 lg:px-12 mt-10">
+            <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pb-10">
+                <div
+                    class=" bg-[linear-gradient(90deg,#114a45_0%,#56A49E_100%)] px-[48px] py-[40px] rounded-[10px] flex items-center justify-center">
+                    <div class="text-white flex justify-start items-center">
+                        <span class="text-[48px] font-[700] pr-2 border-r-2 border-dashed border-white">01</span>
+                        <p class="text-[25px] font-[700] ml-4">
+                            Expertise and <br />Experience
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-[linear-gradient(90deg,#114a45_0%,#56A49E_100%)] px-[48px] py-[40px] rounded-[10px] flex items-center justify-center">
+                    <div class="text-white flex justify-start items-center">
+                        <span class="text-[48px] font-[700] pr-2 border-r-2 border-dashed border-white">02</span>
+                        <p class="text-[25px] font-[700] ml-4">
+                            Committed to <br />Quality
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-[linear-gradient(90deg,#114a45_0%,#56A49E_100%)] px-[48px] py-[40px] rounded-[10px] flex items-center justify-center">
+                    <div class="text-white flex justify-start items-center">
+                        <span class="text-[48px] font-[700] pr-2 border-r-2 border-dashed border-white">03</span>
+                        <p class="text-[25px] font-[700] ml-4">
+                            Comprehensive <br />Services
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-6 lg:px-12">
+            <!-- Vision / Mission / History -->
+            <div class="flex flex-wrap justify-center items-center gap-20 text-center">
+                <!-- Vision -->
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-eye text-[#56A49E] text-7xl mb-4"></i>
+                    <h3 class="text-lg font-bold uppercase">Our Vision</h3>
+                    <p class="text-gray-600 mt-2 text-sm max-w-[250px]">
+                        Empowering businesses with tailored IT solutions for growth and
+                        success.
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-bullseye text-[#56A49E] text-7xl mb-4"></i>
+                    <h3 class="text-lg font-bold uppercase">Our Mission</h3>
+                    <p class="text-gray-600 mt-2 text-sm max-w-[250px]">
+                        To lead in digital innovation, seamlessly blending technology
+                        and strategy.
+                    </p>
+                </div>
+
+                <!-- History -->
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-clock-rotate-left text-[#56A49E] text-7xl mb-4"></i>
+                    <h3 class="text-lg font-bold uppercase">Our History</h3>
+                    <p class="text-gray-600 mt-2 text-sm max-w-[250px]">
+                        A trusted partner in tech, Softechgenics has evolved through
+                        dedication, innovation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="request" class="relative flex justify-center px-4 sm:px-6 lg:px-12 py-20">
+            <div
+                class="relative bg-[url('./assets/About-11.png')] bg-cover bg-center w-full max-w-[1430px] rounded-lg h-[400px]">
+                <!-- Gradient Overlay -->
+                <div
+                    class="bg-gradient-to-r from-[#145B55] to-[#56A49E]/50 w-full h-full flex flex-col items-center justify-center p-6 sm:p-10 rounded-lg text-center">
+                    <div class="w-full max-w-[850px] flex flex-col items-center justify-center sm:gap-12 gap-6">
+                        <!-- Heading -->
+                        <h1
+                            class="text-white text-[28px] sm:text-4xl lg:text-[54px] font-[Sora] font-semibold leading-tight">
+                            Have A Project To Discuss?
+                        </h1>
+
+                        <!-- Button -->
+                        <div
+                            class="relative inline-flex justify-start sm:px-8 sm:py-4 px-6 py-2 font-medium rounded-full overflow-hidden bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white items-center">
+                            <a href="./contact.html" class="">
+                                <span class="relative z-10 flex items-center sm:text-2xl text-sm">
+                                    Contact Us
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Technology" class="py-16 bg-white px-4 sm:px-6 lg:px-12">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-4">
+                <!-- Left Content -->
+                <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                    <p class="text-2xl sm:text-3xl font-normal font-sora">
+                        <span
+                            class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent font-semibold">Inspiring
+                            Creative Issues</span>
+                    </p>
+                    <p class="text-3xl sm:text-5xl font-semibold leading-snug sm:leading-[3.375rem] font-sora">
+                        Empowering Innovation for Meaningful Change!
+                    </p>
+                    <p class="text-base sm:text-lg font-normal font-sora">
+                        At IntellixSoft, creativity fuels our solutions. We believe the
+                        best ideas arise from a blend of insight, collaboration, and
+                        exploration, tailored to transform concepts into high-impact
+                        solutions.
+                    </p>
+                    <p class="text-xl sm:text-2xl font-semibold font-sora">
+                        Our Approach
+                    </p>
+                    <p class="text-base sm:text-lg font-normal font-sora">
+                        With clarity, definition, and resolution as our guiding pillars,
+                        we encourage a dynamic brainstorming process that taps into
+                        diverse perspectives and industry trends.
+                    </p>
+                </div>
+
+                <!-- Right Image -->
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <img src="./assets/About-12.png" alt="About Image"
+                        class="w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto aspect-square object-cover rounded-lg border-4 border-[#FFDE17]" />
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gradient-to-r from-[#114a45] to-[#56A49E] text-white py-10 px-4 sm:px-6">
+        <!-- Overlay -->
+
+        <!-- Footer Content -->
+        <div class="relative z-10 container mx-auto flex justify-between items-start flex-wrap">
+            <!-- Company Info -->
+            <div class="mb-8 w-[320px]">
+                <div class="px-4 sm:px-6 lg:px-8">
+                    <img src="./assets/Logo-main.png" alt="IntellixSoft" class="w-60 h-20 6 mr-2 mb-3" />
+                    <p
+                        class="text-[13px] sm:text-[14px] md:text-sm lg:text-base font-normal leading-relaxed mb-4 font-sora">
+                        At IntellixSoft, we turn ideas into powerful digital realities,
+                    </p>
+                </div>
+
+                <div class="flex space-x-3 px-4 sm:px-6 lg:px-8">
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Mobile App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Web App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">UI/UX
+                            Design</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">SaaS Product
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom Chatbot
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom ChatGPT
+                            App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Search Engine
+                            Optimization</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Digital
+                            Marketing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-8 w-[200px]">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">About Us</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Services</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                <ul class="space-y-3 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt text-[#eed025]"></i>
+                        <span
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300 cursor-pointer">Bahawalpur,
+                            Pakistan</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-[#eed025]"></i>
+                        <a href="mailto:officialIntellixSoft@gmail.com"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">officialIntellixSoft@gmail.com</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-[#eed025]"></i>
+                        <a href="tel:+92314616319"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">+92 314 616
+                            1319</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/header.js" defer></script>
+</body>
+
+</html>

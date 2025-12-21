@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1cb7da3db8.js" crossorigin="anonymous"></script>
+    <!-- Custom Css  -->
+    <link href="output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+
+    <title>IntellixSoft | About</title>
+
+    <style>
+        .koulen-regular {
+            font-family: "Koulen", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ✅ Responsive Sticky Header (Corrected) -->
+    <header class="shadow-md sticky top-0 z-50 bg-black overflow-visible" id="header-bar">
+        <nav class="min-h-[75px] overflow-visible">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/Logo-main.png" class="h-10" alt="Bitzonic Logo" />
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:order-2">
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navbar links -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col justify-center items-center font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
+
+                        <!-- Home -->
+                        <li class="relative p-1">
+                            <a href="./index.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Home</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Services (Corrected Structure) -->
+                        <li class="relative p-1" id="services-menu-trigger">
+                            <a href="./services.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm hover:text-teal-400">Services</a>
+                            <!-- Added the missing underline div -->
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <li class="relative p-1 group" id="courses-menu-trigger">
+                            <!-- Added href="#" to the anchor tag -->
+                            <a href="./courses.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm group-hover:text-teal-400 transition-colors duration-300">
+                                Courses
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+
+
+                            <div
+                                class="active-underline hidden hover:block absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out group-hover:w-full">
+                            </div>
+                            <div id="courses-dropdown"
+                                class="absolute left-0 top-full mt-2 w-56 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                                <ul class="py-1 text-gray-700" role="menu">
+                                    <li><a href="./01-web-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Web App Development</a></li>
+                                    <li><a href="./02-app-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Mobile App Development</a></li>
+                                    <li><a href="./03-Python-&-Machine-Learning.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Python & Machine Learning</a></li>
+                                    <li><a href="./04-Graphic-Designer.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Graphic Designer</a></li>
+                                    <li><a href="./05-Digital-Marketing.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Digital Marketing</a></li>
+                                    <li><a href="./06-Business-Development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Business Developemnt</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Our Team -->
+                        <li class="relative p-1">
+                            <a href="./our-team.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Our
+                                Team</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- About -->
+                        <li class="relative p-1">
+                            <a href="./about.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">About</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="relative p-1">
+                            <a href="./contact.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Contact</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="services-main-content-container">
+        <section class="hero text-center py-20 bg-gray-100">
+            <h1 class="text-4xl font-bold mb-4">Empower Your Future with Industry-Ready Skills</h1>
+            <div class="flex flex-col items-center">
+                <p class="text-lg text-gray-700 mb-6 max-w-[700px]">
+                    Learn from experts and build real-world projects in Web Development, App Development, Python & ML,
+                    Graphic Design, Business Development, and Digital Marketing.
+                </p>
+                <a href="./01-web-development.html" class="">
+                    <button
+                        class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                        Explore Courses
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section id="courses" class="">
+            <div class="bg-black grid lg:grid-cols-2 grid-cols-1 gap-8 p-10">
+                <div
+                    class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                    <!-- Animated Gradient Background -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                    </div>
+
+                    <!-- Content -->
+                    <div
+                        class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                        <h5 class="text-2xl font-bold">Web App Development</h5>
+                        <p class=" mb-4">
+                            Learn how to build fast, modern, and responsive websites using HTML, CSS, JavaScript, and
+                            frameworks like React and Node.js.
+                        </p>
+
+                        <ul class="text-sm  mb-4 list-disc pl-5">
+                            <li>Hands-on live projects</li>
+                            <li>Front-end & Back-end training</li>
+                            <li>Portfolio building</li>
+                            <li>Freelancing guidance</li>
+                        </ul>
+
+                        <div
+                            class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                            <a href="./01-web-development.html" class="">
+                                <span class="relative z-10 flex items-center">
+                                    View Details
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                    <!-- Animated Gradient Background -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                    </div>
+
+                    <!-- Content -->
+                    <div
+                        class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                        <h5 class="text-2xl font-bold">Mobile App Development</h5>
+                        <p class=" mb-4">
+                            Learn to create fast, user-friendly mobile applications using Flutter, React Native, and
+                            native Android & iOS technologies.
+                        </p>
+
+                        <ul class="text-sm  mb-4 list-disc pl-5">
+                            <li>Build real-world mobile apps</li>
+                            <li>Cross-platform & native training</li>
+                            <li>API integration & UI design</li>
+                            <li>App publishing guidance</li>
+                        </ul>
+
+                        <div
+                            class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                            <a href="./02-app-development.html" class="">
+                                <span class="relative z-10 flex items-center">
+                                    View Details
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                    <!-- Animated Gradient Background -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                    </div>
+
+                    <!-- Content -->
+                    <div
+                        class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                        <h5 class="text-2xl font-bold">Python & Machine Learning</h5>
+                        <p class=" mb-4">
+                            Master Python programming and dive into the world of Machine Learning to create smart,
+                            data-driven applications and intelligent systems.
+                        </p>
+
+                        <ul class="text-sm  mb-4 list-disc pl-5">
+                            <li>Learn Python from basics to advanced</li>
+                            <li>Work with real-world ML projects</li>
+                            <li>Understand data analysis & AI models</li>
+                            <li>Get hands-on experience with modern tools</li>
+                        </ul>
+
+                        <div
+                            class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                            <a href="./03-Python-&-Machine-Learning.html" class="">
+                                <span class="relative z-10 flex items-center">
+                                    View Details
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                    <!-- Animated Gradient Background -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                    </div>
+
+                    <!-- Content -->
+                    <div
+                        class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                        <h5 class="text-2xl font-bold">Graphic Designer</h5>
+                        <p class=" mb-4">
+                            Master the art of visual communication and design stunning graphics using tools like Adobe
+                            Photoshop, Illustrator, and Figma to bring ideas to life.
+                        </p>
+
+                        <ul class="text-sm  mb-4 list-disc pl-5">
+                            <li>Learn modern design principles</li>
+                            <li>Hands-on creative projects</li>
+                            <li>Branding & logo design training</li>
+                            <li>Portfolio & freelancing guidance</li>
+                        </ul>
+
+                        <div
+                            class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                            <a href="./04-Graphic-Designer.html" class="">
+                                <span class="relative z-10 flex items-center">
+                                    View Details
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                    <!-- Animated Gradient Background -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                    </div>
+
+                    <!-- Content -->
+                    <div
+                        class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                        <h5 class="text-2xl font-bold">
+                            Digital Marketing</h5>
+                        <p class=" mb-4">
+                            Master the art of online marketing and learn how to grow brands through SEO, social media,
+                            paid ads, and content strategy.
+                        </p>
+
+                        <ul class="text-sm  mb-4 list-disc pl-5">
+                            <li>Learn SEO, SEM, and SMM</li>
+                            <li>Content and email marketing</li>
+                            <li>Google Ads & Analytics training</li>
+                            <li>Real client campaign projects</li>
+                        </ul>
+
+                        <div
+                            class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                            <a href="./05-Digital-Marketing.html" class="">
+                                <span class="relative z-10 flex items-center">
+                                    View Details
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="relative group p-6 bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-h-[350px]">
+                    <!-- Animated Gradient Background -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0">
+                    </div>
+
+                    <!-- Content -->
+                    <div
+                        class="relative z-10 flex flex-col gap-5 text-black group-hover:text-white transition-colors duration-500">
+                        <h5 class="text-2xl font-bold">
+                            Business Developemnt</h5>
+                        <p class=" mb-4">
+                            Learn how to build strategies that grow businesses, attract clients, and improve performance
+                            through modern tools and smart planning.
+                        </p>
+
+                        <ul class="text-sm  mb-4 list-disc pl-5">
+                            <li>Market analysis & strategy building</li>
+                            <li>Client acquisition & relationship management</li>
+                            <li>Sales and communication skills</li>
+                            <li>Real-world business growth projects</li>
+                        </ul>
+
+                        <div
+                            class="relative inline-flex justify-start px-6 py-2 text-sm font-medium rounded-full overflow-hidden w-fit bg-[#eed025] text-black transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:bg-[#56A49E] before:translate-x-[-100%] hover:before:translate-x-0 before:transition-transform before:duration-500 before:ease-in-out before:rounded-full hover:text-white">
+                            <a href="./06-Business-Development.html" class="">
+                                <span class="relative z-10 flex items-center">
+                                    View Details
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 14 10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4-4 4" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="build" class="mt-10 mb-1 border-b-4 border-black">
+            <div
+                class="hero-main min-h-screen px-6 md:px-12 py-10 flex flex-col lg:flex-row items-center gap-10 bg-gradient-to-r from-[#145B55] to-[#56A49E]">
+                <!-- Left Content -->
+                <div class="hero-left w-full lg:w-1/2 flex flex-col gap-5">
+                    <h1 class="text-[32px] md:text-[45.79px] font-[Poppins] font-semibold leading-snug">
+                        Let’s Build Something
+                        <span class=" text-white">Great,
+                            Together.</span>
+                    </h1>
+
+                    <p class="text-[15px] text-white md:text-[15.21px] font-light font-[Poppins]">
+                        Whether you’re launching a new product, modernizing legacy systems, or exploring emerging
+                        tech,
+                        Zenkoders is ready to turn your vision into a powerful digital solution.
+                    </p>
+
+                    <div>
+                        <p class="text-[19px] md:text-[21.34px] font-medium font-[Poppins] mb-2 text-white">
+                            Contact us now and get:
+                        </p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li class="text-[17px] text-white font-normal font-[Poppins]">
+                                A tailored project roadmap
+                            </li>
+                            <li class="text-[17px] text-white font-normal font-[Poppins]">
+                                Tech stack + budget advice
+                            </li>
+                            <li class="text-[17px] text-white font-normal font-[Poppins]">
+                                Dedicated time with a product strategist
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Contact Card -->
+                <div class="hero-right w-full lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="bg-white shadow-lg rounded-xl p-6 md:p-8 w-full max-w-lg flex flex-col justify-center">
+                        <!-- Heading -->
+                        <h2 class="text-xl md:text-2xl font-bold text-center text-gray-900 mb-6">
+                            Get In Touch With Us!
+                        </h2>
+
+                        <form id="contact-form" class="space-y-5">
+                            <input type="text" name="full_name" placeholder="Full Name*" required
+                                class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2" />
+
+                            <input type="email" name="email" placeholder="Business Email*" required
+                                class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2" />
+
+                            <input type="tel" name="phone" placeholder="Phone Number*" required
+                                class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2" />
+
+                            <textarea name="message" placeholder="Describe your Project*" rows="3" required
+                                class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2 resize-none"></textarea>
+
+                            <div class="flex justify-center">
+                                <button
+                                    class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gradient-to-r from-[#114a45] to-[#56A49E] text-white py-10 px-4 sm:px-6 border-t-4 border-[#eed025]">
+        <!-- Overlay -->
+
+        <!-- Footer Content -->
+        <div class="relative z-10 container mx-auto flex justify-between items-start flex-wrap">
+            <!-- Company Info -->
+            <div class="mb-8 w-[320px]">
+                <div class="px-4 sm:px-6 lg:px-8">
+                    <img src="./assets/Logo-main.png" alt="IntellixSoft" class="w-60 h-20 6 mr-2 mb-3" />
+                    <p
+                        class="text-[13px] sm:text-[14px] md:text-sm lg:text-base font-normal leading-relaxed mb-4 font-sora">
+                        At IntellixSoft, we turn ideas into powerful digital realities,
+                    </p>
+                </div>
+
+                <div class="flex space-x-3 px-4 sm:px-6 lg:px-8">
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Mobile App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Web App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">UI/UX
+                            Design</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">SaaS
+                            Product
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom
+                            Chatbot
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom
+                            ChatGPT
+                            App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Search
+                            Engine
+                            Optimization</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Digital
+                            Marketing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-8 w-[200px]">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Services</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                <ul class="space-y-3 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt text-[#eed025]"></i>
+                        <span
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300 cursor-pointer">Bahawalpur,
+                            Pakistan</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-[#eed025]"></i>
+                        <a href="mailto:officialIntellixSoft@gmail.com"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">officialIntellixSoft@gmail.com</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-[#eed025]"></i>
+                        <a href="tel:+92314616319"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">+92 314 616
+                            1319</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/header.js" defer></script>
+</body>
+
+</html>

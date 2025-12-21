@@ -1,0 +1,1048 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1cb7da3db8.js" crossorigin="anonymous"></script>
+    <!-- Custom Css  -->
+    <link href="output.css" rel="stylesheet">
+    <title>IntellixSoft | Services</title>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+
+    <style>
+        .koulen-regular {
+            font-family: "Koulen", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!-- ✅ Responsive Sticky Header (Corrected) -->
+    <header class="shadow-md sticky top-0 z-50 bg-black overflow-visible" id="header-bar">
+        <nav class="min-h-[75px] overflow-visible">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/Logo-main.png" class="h-10" alt="Bitzonic Logo" />
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:order-2">
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navbar links -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <!-- ✅ Corrected Navbar Links Structure -->
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col justify-center items-center font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
+
+                        <!-- Home -->
+                        <li class="relative p-1">
+                            <a href="./index.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Home</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Services (Corrected Structure) -->
+                        <li class="relative p-1" id="services-menu-trigger">
+                            <a href="./services.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm hover:text-teal-400">Services</a>
+                            <!-- Added the missing underline div -->
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <li class="relative p-1 group" id="courses-menu-trigger">
+                            <!-- Added href="#" to the anchor tag -->
+                            <a href="./courses.html"
+                                class="main-nav-link flex items-center py-2 px-3 lg:p-0 text-white rounded-sm group-hover:text-teal-400 transition-colors duration-300">
+                                Courses
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+
+
+                            <div
+                                class="active-underline hidden hover:block absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out group-hover:w-full">
+                            </div>
+                            <div id="courses-dropdown"
+                                class="absolute left-0 top-full mt-2 w-56 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
+                                <ul class="py-1 text-gray-700" role="menu">
+                                    <li><a href="./01-web-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Web App Development</a></li>
+                                    <li><a href="./02-app-development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Mobile App Development</a></li>
+                                    <li><a href="./03-Python-&-Machine-Learning.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Python & Machine Learning</a></li>
+                                    <li><a href="./04-Graphic-Designer.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Graphic Designer</a></li>
+                                    <li><a href="./05-Digital-Marketing.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Digital Marketing</a></li>
+                                    <li><a href="./06-Business-Development.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            role="menuitem">Business Developemnt</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Our Team -->
+                        <li class="relative p-1">
+                            <a href="./our-team.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Our
+                                Team</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- About -->
+                        <li class="relative p-1">
+                            <a href="./about.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">About</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="relative p-1">
+                            <a href="./contact.html"
+                                class="main-nav-link block py-2 px-3 text-white rounded hover:bg-gray-700 lg:hover:bg-transparent lg:hover:text-teal-400 lg:p-0">Contact</a>
+                            <div
+                                class="active-underline absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#145B55] to-[#56A49E] transition-all duration-300 ease-in-out">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="About-content-main">
+
+
+        <section id="hero" class="w-full min-h-[90vh] flex items-center bg-[rgba(228,228,228,0.6)] px-6 md:px-12 ">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center gap-10">
+
+                <!-- Left Content -->
+                <div class="hero-left w-full lg:w-1/2 flex flex-col gap-5 text-center md:text-left">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold font-[Poppins] leading-snug">
+                        Custom <span
+                            class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Software
+                            Development</span> That Drives Digital Growth
+                        <span
+                            class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Innovation</span>
+                    </h1>
+
+                    <p class="text-sm sm:text-base font-light font-[Poppins] text-gray-700">
+                        End-to-end web, mobile, and advanced tech solutions for startups, enterprises, and ambitious
+                        brands. Intellix Soft delivers powerful web platforms, custom mobile applications, and
+                        intelligent digital products that solve real business challenges and fuel innovation. From
+                        mobile to AI-driven systems, we transform your ideas into high-performing, future-ready digital
+                        solutions.
+                    </p>
+
+                    <div class="flex justify-center md:justify-start">
+                        <a href="./contact.html" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] border border-[#eed025] font-[Sora] font-semibold text-sm sm:text-base hover:text-white hover:border hover:border-white hover:bg-[#56A49E] transition ease-in-out duration-300">
+                                Contact Us Now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="hero-right w-full md:w-1/2 hidden lg:flex justify-center md:justify-end">
+                    <!-- Contact Card -->
+                    <div
+                        class="bg-white shadow-lg rounded-xl p-6 sm:p-8 w-full max-w-md lg:max-w-lg flex flex-col justify-center">
+                        <!-- Heading -->
+                        <h2 class="text-xl sm:text-2xl font-bold text-center text-gray-900 mb-6">
+                            Get In Touch With Us!
+                        </h2>
+
+                        <!-- Form -->
+                        <form action="#" method="POST" class="space-y-5">
+                            <!-- Full Name -->
+                            <div>
+                                <input type="text" placeholder="Full Name*"
+                                    class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2"
+                                    required />
+                            </div>
+
+                            <!-- Business Email -->
+                            <div>
+                                <input type="email" placeholder="Business Email*"
+                                    class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2"
+                                    required />
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div>
+                                <input type="tel" placeholder="Phone Number*"
+                                    class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2"
+                                    required />
+                            </div>
+
+                            <!-- Project Description -->
+                            <div>
+                                <textarea placeholder="Describe your Project*" rows="3"
+                                    class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2 resize-none"
+                                    required></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="flex justify-center">
+                                <button
+                                    class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] border border-[#eed025] font-[Sora] font-semibold text-sm sm:text-base hover:text-white hover:border hover:border-white hover:bg-[#56A49E] transition ease-in-out duration-300">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="services" class="px-6 md:px-12 lg:px-20 py-16 bg-white">
+            <!-- Section Header -->
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="font-[Poppins] font-medium text-3xl sm:text-4xl lg:text-5xl leading-snug">
+                    Our <span
+                        class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Software
+                        Development</span> Services
+                </h2>
+                <p class="mt-4 text-gray-600 font-light text-sm sm:text-base">
+                    We create scalable, secure, and high-performance digital solutions for startups, enterprises, and
+                    growing businesses — powered by innovation, creative design thinking, and cutting-edge technologies.
+                </p>
+            </div>
+
+            <!-- Service Rows -->
+            <div class="mt-16 space-y-16">
+                <!-- Row -->
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <div class="w-full lg:w-1/2 flex justify-center">
+                        <img src="./assets/services-4.png" class="w-full max-w-lg rounded-lg object-cover shadow-lg"
+                            alt="Service 1">
+                    </div>
+
+                    <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                        <h3 class="text-2xl sm:text-3xl font-semibold font-[Poppins]">Web App Development</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Create powerful, scalable, and responsive web applications tailored to your business needs.
+                            Our team builds solutions that combine innovation, design, and performance to deliver
+                            seamless digital experiences.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Custom
+                                Web Solutions:</span>
+                            Develop feature-rich, user-friendly web platforms designed for speed, security, and
+                            flexibility across all industries.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">E-Commerce
+                                Platforms:</span>
+                            Build high-performance online stores with secure payment integration, product management,
+                            and intuitive user interfaces.
+                        </p>
+
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Enterprise
+                                Web Portals:</span>
+                            Design scalable portals that streamline workflows, boost collaboration, and simplify
+                            business operations.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Progressive
+                                Web Apps (PWAs):</span>
+                            Design scalable portals that streamline workflows, boost collaboration, and simplify
+                            business operations.
+                        </p>
+                        <a href="./01-web-development.html" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                                Learn More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <div class="w-full lg:w-1/2 flex justify-center">
+                        <img src="./assets/services-1.png" class="w-full max-w-lg rounded-lg object-cover shadow-lg"
+                            alt="Service 1">
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                        <h3 class="text-2xl sm:text-3xl font-semibold font-[Poppins]">Mobile App Development</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Create powerful, user-focused mobile applications that drive engagement and business growth.
+                            Our team develops fast, secure, and scalable apps designed to perform flawlessly across
+                            Android and iOS platforms.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">
+                                Custom App Solutions:</span>
+                            Build mobile apps tailored to your brand goals — from eCommerce to enterprise-level systems
+                            — ensuring smooth performance and modern design.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Cross-Platform
+                                Development:</span>
+                            We use advanced frameworks like Flutter and React Native to deliver consistent experiences
+                            across all devices with faster development cycles.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Maintenance
+                                & Support:</span>
+                            We provide continuous updates, performance monitoring, and technical support to keep your
+                            app secure, efficient, and future-ready.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">UI/UX
+                                Excellence:</span>
+                            Our design team focuses on creating intuitive, attractive, and easy-to-navigate interfaces
+                            that enhance user satisfaction and retention.
+                        </p>
+                        <a href="./02-app-development.html" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                                Learn More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <div class="w-full lg:w-1/2 flex justify-center">
+                        <img src="./assets/services-2.png" class="w-full max-w-lg rounded-lg object-cover shadow-lg"
+                            alt="Service 1">
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                        <h3 class="text-2xl sm:text-3xl font-semibold font-[Poppins]">Python & Machine Learning
+                        </h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Leverage the power of Python and AI-driven models to build smart, data-powered solutions
+                            that automate workflows and deliver deeper insights for your business.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Predictive
+                                Model Development:</span>
+                            Create intelligent machine learning models that forecast trends, analyze behavior, and
+                            support data-driven decision-making.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">AI
+                                Automation Solutions:</span>
+                            Build systems that automate complex business processes, enhance productivity, and reduce
+                            operational costs through Python-based automation.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Data
+                                Analysis & Visualization:</span>
+                            Implement advanced data pipelines and visualization tools to transform raw data into
+                            meaningful, actionable insights.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">AI
+                                Integration Services:</span>
+                            We integrate machine learning and AI models into web, mobile, and SaaS applications —
+                            ensuring scalability, faster performance, and smarter user experiences across platforms.
+                        </p>
+                        <a href="./03-Python-&-Machine-Learning.html" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                                Learn More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <div class="w-full lg:w-1/2 flex justify-center">
+                        <img src="./assets/services-2.png" class="w-full max-w-lg rounded-lg object-cover shadow-lg"
+                            alt="Service 1">
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                        <h3 class="text-2xl sm:text-3xl font-semibold font-[Poppins]">Graphic Designer
+                        </h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Create visually stunning designs that capture attention, communicate ideas, and strengthen
+                            your brand identity. Our creative team delivers custom visuals that combine strategy,
+                            creativity, and modern aesthetics to elevate your business presence.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Brand
+                                Identity Design:</span>
+                            Craft unique logos, color palettes, and visual styles that define your brand and make it
+                            instantly recognizable.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Marketing
+                                & Social Media Graphics:</span>
+                            Design engaging visuals, banners, and social posts that connect with your audience and
+                            enhance online visibility.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Design
+                                engaging visuals, banners, and social posts that connect with your audience and enhance
+                                online visibility.</span>
+                            From brochures to digital ads, we deliver high-quality designs optimized for every platform
+                            and purpose.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Creative
+                                Asset Management:</span>
+                            We maintain brand consistency across all materials, ensuring every visual reflects your
+                            business values and message.
+                        </p>
+                        <a href="./04-Graphic-Designer.html" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                                Learn More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <div class="w-full lg:w-1/2 flex justify-center">
+                        <img src="./assets/services-2.png" class="w-full max-w-lg rounded-lg object-cover shadow-lg"
+                            alt="Service 1">
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                        <h3 class="text-2xl sm:text-3xl font-semibold font-[Poppins]">
+                            Digital Marketing
+                        </h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Drive visibility, engagement, and growth with data-driven digital marketing strategies
+                            tailored to your business goals. Our expert team combines creativity, analytics, and
+                            technology to help your brand stand out in the digital world.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Social
+                                Media Marketing:</span>
+                            Build a strong online presence with creative campaigns that increase brand awareness,
+                            audience engagement, and conversions across all major platforms.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Search
+                                Engine Optimization (SEO):</span>
+                            Improve your website ranking, boost organic traffic, and attract potential customers through
+                            proven SEO techniques and strategic keyword optimization.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Pay-Per-Click
+                                Advertising (PPC):</span>
+                            Maximize ROI with targeted ad campaigns designed to reach the right audience at the right
+                            time, driving measurable business results.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Content
+                                & Email Marketing:</span>
+                            Deliver impactful content and personalized emails that connect with your audience, nurture
+                            leads, and strengthen customer relationships.
+                        </p>
+                        <a href="./05-Digital-Marketing.html" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                                Learn More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <div class="w-full lg:w-1/2 flex justify-center">
+                        <img src="./assets/services-2.png" class="w-full max-w-lg rounded-lg object-cover shadow-lg"
+                            alt="Service 1">
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                        <h3 class="text-2xl sm:text-3xl font-semibold font-[Poppins]">
+                            Business Development
+                        </h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Empower your brand with strategic business solutions designed to boost growth, efficiency,
+                            and client engagement. At Intellix Soft, we combine innovation, data, and market insights to
+                            help your business scale with confidence.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Market
+                                Strategy & Planning:</span>
+                            Develop clear, result-driven strategies that identify opportunities, optimize resources, and
+                            enhance your business performance.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Client
+                                Acquisition & Relationship Building:</span>
+                            Implement smart methods to attract potential clients, strengthen connections, and build
+                            long-term partnerships that drive success.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Sales
+                                Process Optimization:</span>
+                            Streamline your sales pipeline with data-backed systems and automation tools to improve
+                            conversion rates and productivity.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            <span
+                                class="text-lg font-medium bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Digital
+                                Growth Integration:</span>
+                            Leverage digital platforms and technology to expand your reach, boost visibility, and
+                            achieve measurable business growth across multiple channels.
+                        </p>
+                        <a href="./06-Business-Development.html" class="">
+                            <button
+                                class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                                Learn More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Box -->
+            <div class="mt-20">
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between gap-4 bg-[rgba(228,228,228,0.6)] rounded-xl p-6 md:p-10">
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-[Poppins] font-medium text-center md:text-left">
+                        Need a Custom Solution For Your Business?
+                    </h3>
+                    <a href="./contact.html" class="">
+                        <button
+                            class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                            Let's Talk Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="flex flex-col md:flex-row container mx-auto py-10">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Sidebar -->
+                    <div class="md:w-[440px] w-full bg-gradient-to-r from-[#114a45] to-[#56A49E] rounded-2xl p-5">
+                        <ul id="steps" class="space-y-3">
+                            <li data-target="step1"
+                                class="bg-gradient-to-r from-[#145B55] to-[#56A49E] text-white px-4 py-3 rounded-lg font-medium cursor-pointer transition-all duration-500 hover:from-[#56A49E] hover:to-[#145B55] hover:scale-105">
+                                1. Discovery & Ideation
+                            </li>
+
+                            <li data-target="step2"
+                                class="hover:bg-gradient-to-r from-[#145B55] to-[#56A49E] text-white px-4 py-3 rounded-lg font-medium cursor-pointer transition-all duration-500 hover:from-[#56A49E] hover:to-[#145B55] hover:scale-105">
+                                2. UI/UX Design & Prototyping
+                            </li>
+
+                            <li data-target="step3"
+                                class="hover:bg-gradient-to-r from-[#145B55] to-[#56A49E] text-white px-4 py-3 rounded-lg font-medium cursor-pointer transition-all duration-500 hover:from-[#56A49E] hover:to-[#145B55] hover:scale-105">
+                                3. Architecture & Planning
+                            </li>
+
+                            <li data-target="step4"
+                                class="hover:bg-gradient-to-r from-[#145B55] to-[#56A49E] text-white px-4 py-3 rounded-lg font-medium cursor-pointer transition-all duration-500 hover:from-[#56A49E] hover:to-[#145B55] hover:scale-105">
+                                4. Agile Development (Sprints)
+                            </li>
+
+                            <li data-target="step5"
+                                class="hover:bg-gradient-to-r from-[#145B55] to-[#56A49E] text-white px-4 py-3 rounded-lg font-medium cursor-pointer transition-all duration-500 hover:from-[#56A49E] hover:to-[#145B55] hover:scale-105">
+                                5. Quality Assurance & Testing
+                            </li>
+
+                            <li data-target="step6"
+                                class="hover:bg-gradient-to-r from-[#145B55] to-[#56A49E] text-white px-4 py-3 rounded-lg font-medium cursor-pointer transition-all duration-500 hover:from-[#56A49E] hover:to-[#145B55] hover:scale-105">
+                                6. Launch & Deployment
+                            </li>
+
+                            <li data-target="step7"
+                                class="hover:bg-gradient-to-r from-[#145B55] to-[#56A49E] text-white px-4 py-3 rounded-lg font-medium cursor-pointer transition-all duration-500 hover:from-[#56A49E] hover:to-[#145B55] hover:scale-105">
+                                7. Post-launch Support
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Content Box -->
+                    <div class="md:w-2/3 w-full flex items-center">
+                        <div
+                            class="mt-6 md:mt-0 h-[70%] flex flex-col justify-center bg-white rounded-r-xl md:border-l-0 border-l border-t border-b border-r p-8 shadow-sm w-full">
+                            <!-- Step Contents -->
+                            <div id="step1" class="step-content">
+                                <h2
+                                    class="text-2xl font-semibold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent mb-4">
+                                    Discovery & Ideation
+                                </h2>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    We begin by deeply understanding your business, users, and goals.
+                                    This phase includes stakeholder interviews, feature
+                                    prioritization, and technical feasibility.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-800 space-y-2">
+                                    <li>Product Vision & Roadmap</li>
+                                    <li>Competitive Analysis</li>
+                                    <li>Tech Stack Recommendations</li>
+                                </ul>
+                            </div>
+
+                            <div id="step2" class="step-content hidden">
+                                <h2
+                                    class="text-2xl font-semibold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent mb-4">
+                                    UI/UX Design & Prototyping
+                                </h2>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    Our designers craft intuitive user flows, low/high-fidelity
+                                    wireframes, and interactive prototypes all tailored to your brand
+                                    and user behavior.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-800 space-y-2">
+                                    <li>Wireframing & Prototyping</li>
+                                    <li>Design Systems & Brand Alignment</li>
+                                    <li>Design-to-Dev Handoff</li>
+                                </ul>
+                            </div>
+
+                            <div id="step3" class="step-content hidden">
+                                <h2
+                                    class="text-2xl font-semibold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent mb-4">
+                                    Architecture & Planning
+                                </h2>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    We define your app’s structure, integrations, and data flow. Our
+                                    architects select the best frameworks to ensure scalability and
+                                    security.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-800 space-y-2">
+                                    <li>Database & API Architecture</li>
+                                    <li>System Design Documentation</li>
+                                    <li>Scalability Planning</li>
+                                </ul>
+                            </div>
+
+                            <div id="step4" class="step-content hidden">
+                                <h2
+                                    class="text-2xl font-semibold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent mb-4">
+                                    Agile Development (Sprints)
+                                </h2>
+                                <p class="text-gray-700">
+                                    Our cross-functional team begins iterative development in 1–2 week
+                                    sprints, with regular demos and feedback loops.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-800 space-y-2">
+                                    <li>Frontend & Backend Development</li>
+                                    <li>DevOps Integration</li>
+                                    <li>Weekly Sprint Reviews</li>
+                                </ul>
+                            </div>
+
+                            <div id="step5" class="step-content hidden">
+                                <h2
+                                    class="text-2xl font-semibold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent mb-4">
+                                    Quality Assurance & Testing
+                                </h2>
+                                <p class="text-gray-700">
+                                    We run continuous manual and automated testing to eliminate bugs
+                                    and ensure peak performance across all devices and use cases.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-800 space-y-2">
+                                    <li>Functional & Non-functional Testing</li>
+                                    <li>Cross-browser & Device Testing</li>
+                                    <li>Regression & Load Testing</li>
+                                </ul>
+                            </div>
+
+                            <div id="step6" class="step-content hidden">
+                                <h2
+                                    class="text-2xl font-semibold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent mb-4">
+                                    Launch & Deployment
+                                </h2>
+                                <p class="text-gray-700">
+                                    We prepare your solution for production deployment, whether it’s a
+                                    mobile app store launch or server-side deployment for a web
+                                    platform.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-800 space-y-2">
+                                    <li>Play Store / App Store Submission</li>
+                                    <li>Cloud Deployment & DNS</li>
+                                    <li>Final UAT & Go-live Support</li>
+                                </ul>
+                            </div>
+
+                            <div id="step7" class="step-content hidden">
+                                <h2
+                                    class="text-2xl font-semibold bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent mb-4">
+                                    Post-launch Support
+                                </h2>
+                                <p class="text-gray-700">
+                                    After launch, we continue to support your app with performance
+                                    optimization, new feature rollout, and user-driven enhancements.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-800 space-y-2">
+                                    <li>Maintenance & Updates</li>
+                                    <li>Analytics & Feedback Loops</li>
+                                    <li>Feature Expansion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose-us" class="mt-18 mb-18">
+            <div class="px-6 md:px-12">
+                <!-- Heading -->
+                <h2 class="font-[Poppins] font-medium text-[36px] md:text-[56.97px] text-center">
+                    Why Choose <span
+                        class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">IntellixSoft?</span>
+                </h2>
+
+                <!-- Subtitle -->
+                <div class="w-full flex justify-center py-6 md:py-10">
+                    <p class="font-[Poppins] font-light text-[16px] md:text-[16.07px] text-center max-w-2xl">
+                        At Intellix Soft, we don’t just build software — we create solutions that solve real challenges,
+                        accelerate business growth, and deliver measurable impact. Our team blends innovation, strategy,
+                        and technology to engineer digital products that perform, scale, and inspire trust.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cards Grid Row 1 -->
+            <div class="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-6 md:gap-8 text-center px-6 md:px-12">
+                <!-- Card -->
+                <div class="flex flex-col gap-5 shadow-sm rounded-[10px] p-6 bg-[rgba(228,228,228,0.6)]">
+                    <h3
+                        class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent font-semibold text-[22px] md:text-[25.53px] font-[Poppins]">
+                        Tailored Solutions, Built for Scale
+                    </h3>
+                    <p class="text-black font-light text-[16px] md:text-[19.85px] leading-normal">
+                        We create scalable web and mobile apps aligned with your business goals, ensuring performance,
+                        flexibility, and growth at every stage.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-5 shadow-sm rounded-[10px] p-6 bg-[rgba(228,228,228,0.6)]">
+                    <h3
+                        class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent font-semibold text-[22px] md:text-[25.53px] font-[Poppins]">
+                        Expert Teams with Tech Knowledge
+                    </h3>
+                    <p class="text-black font-light text-[16px] md:text-[19.85px] leading-normal">
+                        Our skilled professionals combine deep technical expertise with creative problem-solving to
+                        deliver innovative, high-performing digital solutions.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-5 shadow-sm rounded-[10px] p-6 bg-[rgba(228,228,228,0.6)]">
+                    <h3
+                        class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent font-semibold text-[22px] md:text-[25.53px] font-[Poppins]">
+                        Agile & Collaborative Process
+                    </h3>
+                    <p class="text-black font-light text-[16px] md:text-[19.85px] leading-normal">
+                        We follow an agile workflow that keeps you involved at every stage, ensuring fast delivery,
+                        transparency, and results that match your vision.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-5 shadow-sm rounded-[10px] p-6 bg-[rgba(228,228,228,0.6)]">
+                    <h3
+                        class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent font-semibold text-[22px] md:text-[25.53px] font-[Poppins]">
+                        Future-Ready Technologies
+                    </h3>
+                    <p class="text-black font-light text-[16px] md:text-[19.85px] leading-normal">
+                        We build with the latest tools and frameworks to ensure your digital products stay modern,
+                        adaptable, and ready for tomorrow’s innovations.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-5 shadow-sm rounded-[10px] p-6 bg-[rgba(228,228,228,0.6)]">
+                    <h3
+                        class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent font-semibold text-[22px] md:text-[25.53px] font-[Poppins]">
+                        Data-Driven & Secure by Design
+                    </h3>
+                    <p class="text-black font-light text-[16px] md:text-[19.85px] leading-normal">
+                        We build solutions backed by data insights and strong security, ensuring reliable performance
+                        and protection at every level.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-5 shadow-sm rounded-[10px] p-6 bg-[rgba(228,228,228,0.6)]">
+                    <h3
+                        class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent font-semibold text-[22px] md:text-[25.53px] font-[Poppins]">
+                        Global Reach, Local Commitment
+                    </h3>
+                    <p class="text-black font-light text-[16px] md:text-[19.85px] leading-normal">
+                        We serve clients worldwide while delivering personalized support and dedicated solutions
+                        tailored to each business need.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="build" class="mt-18">
+            <div
+                class="hero-main bg-[rgba(228,228,228,0.6)] min-h-screen px-6 md:px-12 py-10 flex flex-col lg:flex-row items-center gap-10">
+                <!-- Left Content -->
+                <div class="hero-left w-full lg:w-1/2 flex flex-col gap-5">
+                    <h1 class="text-[32px] lg:text-[45.79px] md:text-[40px] font-[Poppins] font-semibold leading-snug">
+                        Let’s Build Something Great,
+                        <span class="bg-gradient-to-r from-[#145B55] to-[#56A49E] bg-clip-text text-transparent">Great,
+                            Together.</span>
+                    </h1>
+
+                    <p class="text-[15px] md:text-[15.21px] font-light font-[Poppins]">
+                        Whether you’re launching a new product, upgrading existing systems, or exploring emerging
+                        technologies, Intellix Soft is here to turn your vision into a powerful digital reality.
+                    </p>
+
+                    <div>
+                        <p class="text-[19px] md:text-[21.34px] font-medium font-[Poppins] mb-2">
+                            Contact us now and get:
+                        </p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li class="text-[17px] font-normal font-[Poppins]">
+                                A customized project roadmap
+                            </li>
+                            <li class="text-[17px] font-normal font-[Poppins]">
+                                Expert guidance on tech stack and budget
+                            </li>
+                            <li class="text-[17px] font-normal font-[Poppins]">
+                                Dedicated consultation with a product strategist
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Contact Card -->
+                <div class="hero-right w-full lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="bg-white shadow-lg rounded-xl p-6 md:p-8 w-full max-w-lg flex flex-col justify-center">
+                        <!-- Heading -->
+                        <h2 class="text-xl md:text-2xl font-bold text-center text-gray-900 mb-6">
+                            Get In Touch With Us!
+                        </h2>
+
+                        <form id="contact-form" class="space-y-5">
+                            <input type="text" name="full_name" placeholder="Full Name*" required
+                                class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2" />
+
+                            <input type="email" name="email" placeholder="Business Email*" required
+                                class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2" />
+
+                            <input type="tel" name="phone" placeholder="Phone Number*" required
+                                class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2" />
+
+                            <textarea name="message" placeholder="Describe your Project*" rows="3" required
+                                class="w-full border-b border-gray-300 focus:border-[#56A49E] focus:outline-none text-gray-700 py-2 resize-none"></textarea>
+
+                            <div class="flex justify-center">
+                                <button
+                                    class="cursor-pointer py-3 px-6 rounded-md text-black bg-[#eed025] font-[Sora] font-semibold text-sm sm:text-base   hover:text-white border-transparent transition ease-in-out duration-300 hover:border-white hover:bg-[#56A49E]">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gradient-to-r from-[#114a45] to-[#56A49E] text-white py-10 px-4 sm:px-6">
+        <!-- Overlay -->
+
+        <!-- Footer Content -->
+        <div class="relative z-10 container mx-auto flex justify-between items-start flex-wrap">
+            <!-- Company Info -->
+            <div class="mb-8 w-[320px]">
+                <div class="px-4 sm:px-6 lg:px-8">
+                    <img src="./assets/Logo-main.png" alt="IntellixSoft" class="w-60 h-20 6 mr-2 mb-3" />
+                    <p
+                        class="text-[13px] sm:text-[14px] md:text-sm lg:text-base font-normal leading-relaxed mb-4 font-sora">
+                        At IntellixSoft, we turn ideas into powerful digital realities,
+                    </p>
+                </div>
+
+                <div class="flex space-x-3 px-4 sm:px-6 lg:px-8">
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-white text-[#56A49E] hover:text-white hover:bg-[#eed025] px-2 py-1.5 rounded-full transition ease-in-out duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Mobile App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Web App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">UI/UX
+                            Design</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">SaaS
+                            Product
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom
+                            Chatbot
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Custom
+                            ChatGPT
+                            App
+                            Development</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Search
+                            Engine
+                            Optimization</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Digital
+                            Marketing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-8 w-[200px]">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Services</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right text-[#eed025]"></i>
+                        <a href="#" class="hover:tracking-[1px] transition-all ease-in-out duration-300">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mb-8 w-[320px]">
+                <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                <ul class="space-y-3 text-sm sm:text-[14.27px] font-normal leading-relaxed font-[Sora]">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt text-[#eed025]"></i>
+                        <span
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300 cursor-pointer">Bahawalpur,
+                            Pakistan</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-[#eed025]"></i>
+                        <a href="mailto:officialIntellixSoft@gmail.com"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">officialIntellixSoft@gmail.com</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-[#eed025]"></i>
+                        <a href="tel:+92314616319"
+                            class="hover:tracking-[1px] transition-all ease-in-out duration-300">+92 314 616
+                            1319</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/header.js" defer></script>
+    <script src="./js/services.js" defer></script>
+</body>
+
+</html>
