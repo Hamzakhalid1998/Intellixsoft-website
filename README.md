@@ -4,7 +4,7 @@ A modern, responsive business website for **IntellixSoft**, built using **HTML**
 
 ## 🚀 Live Demo
 
-https://intellixsoft-website.vercel.app
+[https://rainbow-parfait-783a1b.netlify.app/]
 
 ## 🛠️ Tech Stack
 
